@@ -139,7 +139,7 @@ body, h1, h2, h3, p, ul, li {
     display: block;
     width: 25px;
     height: 3px;
-    background: #333;
+    background: white;
     margin: 5px auto;
     transition: background 0.3s;
   }
