@@ -182,3 +182,14 @@ body, h1, h2, h3, p, ul, li {
   display: flex;
   justify-content: space-between;
 }
+.video-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.centered-video {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
