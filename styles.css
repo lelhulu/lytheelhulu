@@ -15,7 +15,7 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(90deg, #4b79a1, #283e51);
+    background: linear-gradient(90deg, #283e51, #4b79a1);
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -25,18 +25,13 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    padding: 10px;
-}
-
-nav h1 {
-    font-size: 24px;
-    margin: 0;
+    padding: 15px 0;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 nav ul li {
@@ -44,16 +39,18 @@ nav ul li {
 }
 
 nav a {
-    text-decoration: none;
-    color: white;
+    font-size: 18px;
     font-weight: bold;
-    transition: color 0.3s, border-bottom 0.3s;
-    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    color: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav a:hover {
-    color: #ffc107;
-    border-bottom: 2px solid #ffc107;
+    background-color: #ffc107;
+    color: #283e51;
 }
 
 /* Main Sections */
@@ -114,7 +111,10 @@ footer {
 .footer-linkedin {
     display: inline-block;
     margin-top: 20px;
-    color: blue;
+    color: #ffc107;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 .footer-linkedin img {
@@ -122,6 +122,10 @@ footer {
     height: 20px;
     margin-right: 5px;
     vertical-align: middle;
+}
+
+.footer-linkedin:hover {
+    color: #ff9800;
 }
 
 /* Navigation Icon */
@@ -173,7 +177,13 @@ footer {
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
-        align-items: flex-end;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    nav a {
+        padding: 10px;
+        text-align: left;
     }
 
     .container {
