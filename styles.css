@@ -25,40 +25,42 @@ body {
 
 /* Header */
 header {
-    background: #222;
-    color: #fff;
+    background: #283e51; /* Dark background for contrast */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    padding: 20px;
-}
-
-nav h1 {
-    font-size: 24px;
-    margin: 0; /* Remove default margin */
+    padding: 15px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    gap: 20px; /* Ensure items are spaced evenly */
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin: 0; /* Remove extra margins */
 }
 
 nav a {
+    font-size: 18px;
+    font-weight: bold;
     text-decoration: none;
-    color: #fff;
+    color: #fff; /* Make the text white for visibility */
+    padding: 10px 15px;
+    background: none; /* Remove background */
+    border: none; /* Remove border */
     transition: color 0.3s, border-bottom 0.3s;
-    border-bottom: 2px solid transparent;
 }
 
 nav a:hover {
-    color: #ffc107;
-    border-bottom: 2px solid #ffc107;
+    color: #ffc107; /* Add hover color */
+    border-bottom: 2px solid #ffc107; /* Add hover underline */
 }
 
 /* Main Sections */
@@ -136,6 +138,6 @@ footer a.footer-linkedin img {
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center; /* Center items in mobile view */
     }
 }
