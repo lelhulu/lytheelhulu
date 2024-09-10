@@ -1,195 +1,182 @@
-/* Reset some default styles */
+/* Reset default styles */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #333;
-  }
-  
-  /* Header */
-  header {
-    background: #222;
-    color: #fff;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: center; 
+    background-color: #f4f4f9;
     padding: 20px;
 }
-  
-  nav h1 {
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #4b79a1, #283e51);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav h1 {
     font-size: 24px;
-    margin: 0; /* Remove default margin */
-  }
-  
-  nav ul {
+    margin: 0;
+}
+
+nav ul {
     list-style: none;
     display: flex;
-  }
-  
-  nav ul li {
+    gap: 20px;
+}
+
+nav ul li {
     margin-right: 20px;
-  }
-  
-  nav a {
+}
+
+nav a {
     text-decoration: none;
-    color: #fff;
+    color: white;
+    font-weight: bold;
     transition: color 0.3s, border-bottom 0.3s;
     border-bottom: 2px solid transparent;
-  }
-  
-  nav a:hover {
+}
+
+nav a:hover {
     color: #ffc107;
     border-bottom: 2px solid #ffc107;
-  }
-  
-  /* Main Sections */
-  .container {
+}
+
+/* Main Sections */
+.container {
     max-width: 960px;
     margin: 0 auto;
     padding: 40px;
-  }
-  
-  h2 {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2, h3, h4 {
     font-size: 28px;
     margin-bottom: 20px;
-  }
-  
-  h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-  }
-  h4 {
-    font-size: 24px;
-    margin-bottom: 15px;
-  }
-  
-  p {
+}
+
+p, li {
     font-size: 16px;
     margin-bottom: 20px;
-  }
-  
-  ul {
+}
+
+ul {
     margin-bottom: 20px;
-  }
-  
-  li {
+}
+
+li {
     margin-bottom: 10px;
-  }
-  
-  /* Buttons */
-  .btn {
+}
+
+/* Buttons */
+.btn, .resume-button {
     display: inline-block;
     padding: 10px 20px;
     background: #ffc107;
-    color: #fff;
+    color: white;
     border: none;
     border-radius: 5px;
-    text-align: center;
     cursor: pointer;
+    text-decoration: none;
     transition: background 0.3s;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover, .resume-button:hover {
     background: #ff9800;
-  }
-  
-  /* Footer */
-  footer {
-    background: #222;
-    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
     text-align: center;
     padding: 20px;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    nav ul {
-      flex-direction: column;
-      align-items: flex-end;
-    }
-  }
-/* Footer */
+    margin-top: 40px;
+}
+
 .footer-linkedin {
     display: inline-block;
     margin-top: 20px;
     color: blue;
-  }
-  
-  .footer-linkedin img {
+}
+
+.footer-linkedin img {
     width: 20px;
     height: 20px;
     margin-right: 5px;
     vertical-align: middle;
-  }
-
+}
 
 /* Navigation Icon */
 .menu-icon {
     cursor: pointer;
     padding: 10px;
-  }
-  
-  .bar {
+}
+
+.bar {
     display: block;
     width: 25px;
     height: 3px;
     background: white;
     margin: 5px auto;
     transition: background 0.3s;
-  }
-  
-  /* Hidden Navigation Menu */
-  .nav-links {
+}
+
+/* Hidden Navigation Menu */
+.nav-links {
     display: none;
     list-style: none;
     padding-top: 20px;
-  }
-  
-  .nav-links.active {
-    display: block; /* Show the menu when active */
-  }
-
-.resume-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #ffc107; /* Yellow background color */
-    color: #fff; /* White text color */
-    text-decoration: none; /* Remove underline */
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    cursor: pointer;
-    transition: background 0.3s;
 }
 
-.resume-button:hover {
-    background: #ff9800; /* Yellow color when hovered */
+.nav-links.active {
+    display: block;
 }
 
+/* Centered Image */
 .centered-image {
-  display: block;
-  margin: 25px auto 0;
+    display: block;
+    margin: 25px auto 0;
 }
-  
-  
-.image-container {
-  display: flex;
-  justify-content: space-between;
-}
+
+/* Video Container */
 .video-container {
-  text-align: center;
-  margin: 20px 0;
+    text-align: center;
+    margin: 20px 0;
 }
 
 .centered-video {
-  max-width: 100%;
-  height: auto;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .container {
+        padding: 20px;
+    }
 }
