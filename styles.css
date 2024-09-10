@@ -56,7 +56,7 @@ nav ul li {
 
 /* Navigation Links */
 nav a {
-    color: black; /* Changed from white to black */
+    color: black; /* Keep the color black at all times */
     font-size: 18px;
     text-decoration: none;
     padding: 10px 15px;
@@ -65,9 +65,10 @@ nav a {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Optionally, you can still change the background color on hover */
 nav a:hover {
     background-color: #ffc107;
-    color: #283e51;
+    color: black; /* Keep text color black on hover */
 }
 
 /* Responsive (Mobile) Menu */
