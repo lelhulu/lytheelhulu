@@ -7,42 +7,46 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <!-- Header and Navigation -->
   <header>
-    <nav>
+    <div class="container">
+      <h1>Lythe Elhulu</h1>
       <nav>
-        <div class="container">
-            <h1>Lythe Elhulu</h1>
-            <div class="mobile-menu">
-              <div class="menu-icon" id="menu-icon">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-              </div>
-              <ul class="nav-links" id="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-    </nav>
-    </nav>
+        <div class="menu-icon" id="menu-icon">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <script src="script.js"></script>
-</body>
-</html>
 
-
+  <!-- Main Content Section -->
   <section id="home" class="container">
     <h2>Welcome to My Portfolio</h2>
     <p>This is where you can explore my projects, skills, and learn more about me.</p>
     <a href="about.html" class="btn">About Me</a>
   </section>
 
+  <!-- Footer Section -->
   <footer>
-    <iframe src="footer.html" frameborder="0" scrolling="no"></iframe>
+    <div class="container">
+      <p>&copy; 2024 Lythe Elhulu. All rights reserved.</p>
+      <a href="https://www.linkedin.com/in/lytheelhulu/" class="footer-linkedin" target="_blank">
+        <img src="images/linkedin-logo.png" alt="LinkedIn Logo"> Connect on LinkedIn
+      </a>
+    </div>
   </footer>
 
+  <!-- JavaScript for mobile menu toggle -->
+  <script src="script.js"></script>
+  
 </body>
 </html>
