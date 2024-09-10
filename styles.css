@@ -1,59 +1,17 @@
-/* Reset default styles */
+/* Reset some default styles */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f9;
-    padding: 20px;
+    min-height: 100vh; /* Ensure body takes up full screen height */
 }
 
-/* Header */
-header {
-    background: linear-gradient(90deg, #283e51, #4b79a1);
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    padding: 15px 0;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-}
-
-nav ul li {
-    margin-right: 20px;
-}
-
-nav a {
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #f0f0f0;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-nav a:hover {
-    background-color: #ffc107;
-    color: #283e51;
-}
-
-/* Main Sections */
 .container {
     max-width: 960px;
     margin: 0 auto;
@@ -62,14 +20,64 @@ nav a:hover {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    min-height: 100vh; /* Ensure container takes up full screen height */
 }
 
-h2, h3, h4 {
+/* Header */
+header {
+    background: #222;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+nav h1 {
+    font-size: 24px;
+    margin: 0; /* Remove default margin */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    color: #ffc107;
+    border-bottom: 2px solid #ffc107;
+}
+
+/* Main Sections */
+h2 {
     font-size: 28px;
     margin-bottom: 20px;
 }
 
-p, li {
+h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+p {
     font-size: 16px;
     margin-bottom: 20px;
 }
@@ -83,19 +91,19 @@ li {
 }
 
 /* Buttons */
-.btn, .resume-button {
+.btn {
     display: inline-block;
     padding: 10px 20px;
     background: #ffc107;
-    color: white;
+    color: #fff;
     border: none;
     border-radius: 5px;
+    text-align: center;
     cursor: pointer;
-    text-decoration: none;
     transition: background 0.3s;
 }
 
-.btn:hover, .resume-button:hover {
+.btn:hover {
     background: #ff9800;
 }
 
@@ -106,87 +114,28 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
+    position: relative; /* Ensure footer stays at the bottom without covering content */
 }
 
-.footer-linkedin {
+/* Footer LinkedIn Icon */
+footer a.footer-linkedin {
     display: inline-block;
-    margin-top: 20px;
-    color: #ffc107;
-    font-weight: bold;
+    margin-top: 10px;
     text-decoration: none;
-    transition: color 0.3s;
+    color: white;
+    font-weight: bold;
 }
 
-.footer-linkedin img {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-    vertical-align: middle;
-}
-
-.footer-linkedin:hover {
-    color: #ff9800;
-}
-
-/* Navigation Icon */
-.menu-icon {
-    cursor: pointer;
-    padding: 10px;
-}
-
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background: white;
-    margin: 5px auto;
-    transition: background 0.3s;
-}
-
-/* Hidden Navigation Menu */
-.nav-links {
-    display: none;
-    list-style: none;
-    padding-top: 20px;
-}
-
-.nav-links.active {
-    display: block;
-}
-
-/* Centered Image */
-.centered-image {
-    display: block;
-    margin: 25px auto 0;
-}
-
-/* Video Container */
-.video-container {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.centered-video {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+footer a.footer-linkedin img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    nav a {
-        padding: 10px;
-        text-align: left;
-    }
-
-    .container {
-        padding: 20px;
+        align-items: flex-end;
     }
 }
