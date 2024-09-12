@@ -164,6 +164,18 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
+    position: relative;
+}
+
+/* Fix for the white box in the footer */
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: transparent; /* Removes the white box */
 }
 
 /* Footer LinkedIn Icon */
@@ -188,6 +200,11 @@ footer a.footer-linkedin img {
 
 footer a.footer-linkedin:hover {
     background-color: #005582; /* Darker blue for hover effect */
+}
+
+/* Adjust the LinkedIn button margin so it doesn't get cut off */
+footer a.footer-linkedin {
+    margin-bottom: 20px;
 }
 
 /* Responsive Design */
