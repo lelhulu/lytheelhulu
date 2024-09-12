@@ -65,7 +65,7 @@ nav a {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Optionally, you can still change the background color on hover */
+/* Hover effect for navigation links */
 nav a:hover {
     background-color: #ffc107;
     color: black; /* Keep text color black on hover */
@@ -115,29 +115,9 @@ h3 {
     margin-bottom: 15px;
 }
 
-h4 {
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
 p {
     font-size: 16px;
     margin-bottom: 20px;
-}
-
-ul {
-    margin-bottom: 20px;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-/* Center Image */
-.centered-image {
-    display: block;
-    margin: 20px auto; /* This centers the image horizontally */
-    border-radius: 8px; /* Optional: If you want the image to have rounded corners */
 }
 
 /* Buttons */
@@ -164,18 +144,6 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
-    position: relative;
-}
-
-/* Fix for the white box in the footer */
-footer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background-color: transparent; /* Removes the white box */
 }
 
 /* Footer LinkedIn Icon */
@@ -200,11 +168,6 @@ footer a.footer-linkedin img {
 
 footer a.footer-linkedin:hover {
     background-color: #005582; /* Darker blue for hover effect */
-}
-
-/* Adjust the LinkedIn button margin so it doesn't get cut off */
-footer a.footer-linkedin {
-    margin-bottom: 20px;
 }
 
 /* Responsive Design */
